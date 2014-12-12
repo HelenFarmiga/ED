@@ -20,7 +20,7 @@ public class VectorTest {
 		assertEquals(15, Vector.min(new int [] 	{19, 33, 16, 15, 17}));
 	}
 
-	
+
 	@Test (expected=ArrayIndexOutOfBoundsException.class)
 	public void testIndexOfEmpty(){
 		int [] v = new int[]{}; //vacío
@@ -34,5 +34,18 @@ public class VectorTest {
 		assertEquals(5, Vector.indexOf(v, 12));
 		assertEquals(12, Vector.indexOf(v, 12));
 		assertEquals(9, Vector.indexOf(v, 12));
-		}	
+		}
+	@Test
+	public void testSelectionSort(){
+		int [] v = new int[]{12, 33, 16, 15, 17};
+		Vector.SelectionSort(v);
+		assertArrayEquals(new int[]{17, 12, 15, 16, 33}, v);
+		//ordenado ascendentemente
+		v = new int[]{12, 33, 16, 15, 17};
+		Vector.SelectionSort(v);
+		//ordenado descendentemente
+		v= new int[]{33, 16, 15, 12, 7};
+		Vector.SelectionSort(v);
+		
+	}
 }

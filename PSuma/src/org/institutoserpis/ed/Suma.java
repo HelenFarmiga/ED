@@ -7,22 +7,22 @@ public class Suma {
 public static void main (String[]args ){
 	
 	System.out.println("Programa para sumar dos numeros");
-	Scanner scanner = new Scanner(System.in);
+	Scanner aux = new Scanner(System.in);
 	System.out.println("Introduce el primero ");
 
-	String primerDato = scanner.nextLine();
+	String primerDato = aux.nextLine();
 	BigDecimal primerNumero = new BigDecimal(primerDato);
 	System.out.println("Primer número " + primerNumero);
 	
 	System.out.println("Introduce el segundo ");
-	String segundoDato = scanner.nextLine();
+	String segundoDato = aux.nextLine();
 	BigDecimal segundoNumero = new BigDecimal(segundoDato);
 	System.out.println("Segundo número " + segundoNumero);
 	BigDecimal suma= primerNumero.add(segundoNumero);
 	System.out.println("La suma es " + suma);
 	
 //	System.out.println("Programa para sumar dos numeros");
-//	Scanner scanner = new Scanner(System.in);
+//	Scanner scanner = new Scanner(System.in);ux
 //	System.out.println("Introduce el primero ");
 //
 //	String primerDato = scanner.nextLine();
